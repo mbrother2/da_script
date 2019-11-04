@@ -1,0 +1,7 @@
+#!/bin/bash
+while true
+do
+    date >> /root/spam.txt
+    lsof -i | grep smtp >> /root/spam.txt
+    sleep 20
+done
